@@ -1,0 +1,102 @@
+body, html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+  
+  .parallax {
+    /* The image used */
+    background-image: url(smth.jpeg);
+    height: 40%; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  .row1 {
+      background-image: url(divider_bcgd.jpeg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+
+  }
+  .row2 {
+    background-image: url(divider_bcgd2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+  }
+
+  .row3 {
+    background-image: url(contact_bkd.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
+
+  .yellow-text {
+      color: #f6d55c;
+  }
+
+  .backyellow {
+    background-color: #f6d55c;
+}
+
+  .db-text {
+    color: #173f5f;
+  }
+
+  .lb-text {
+    color: #20639b
+  }
+
+  .lbback {
+    background-color: #20639b
+  }
+
+  .mg-text {
+    color: #3caea3;
+  }
+
+  .mg-back {
+    background-color: #3caea3;
+  }
+
+  .red-text {
+    color: #ed553b;
+  }
+
+  .backred {
+    background-color: #ed553b;
+  }
+  
+  .about-us {
+    text-align: center;
+  }
+
+  .fix-margin {
+    margin-left:-1%;
+    margin-right: -1%
+  }
+
+  .card {
+    background-color: #20639b;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .nav-fa {
+    margin-top: 5%; 
+    margin-left: 5%;
+    cursor:pointer;
+  }
+
+  .whiteHover :hover {
+    color: #f1f1f1;
+  }

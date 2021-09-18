@@ -1,0 +1,152 @@
+<html>
+    <head>
+        <title>To Do List</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="style_for_finalproj.css">
+        <link rel="stylesheet" href="sidenav-css.css">
+        <script src="https://kit.fontawesome.com/2a6500bca6.js" crossorigin="anonymous"></script>
+
+        <style>
+        body {
+            margin: 0;
+            min-width: 250px;
+          }
+          
+          /* Include the padding and border in an element's total width and height */
+          * {
+            box-sizing: border-box;
+          }
+          
+          /* Remove margins and padding from the list */
+          ul {
+            margin: 0;
+            padding: 0;
+          }
+          
+          /* Style the list items */
+          ul li {
+            cursor: pointer;
+            position: relative;
+            padding: 12px 8px 12px 40px;
+            list-style-type: none;
+            background: #eee;
+            font-size: 18px;
+            transition: 0.2s;
+            color: #20639b;
+            
+            
+            /* make items unselectable */
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+          }
+          ul li:hover {
+            background: #ddd;
+          }
+          
+          /* When clicked on, add a background color and strike out text */
+          ul li.checked {
+            background: #888;
+            color: #fff;
+            text-decoration: line-through;
+          }
+          
+
+          /* Style the close button */
+          .close {
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 12px 16px 12px 16px;
+          }
+          
+          .close:hover {
+            background-color: #f44336;
+            color: white;
+          }
+          
+          /* Style the header */
+          .header {
+            background-color: #3caea3;
+            padding: 50px 40px;
+            color: white;
+            text-align: center;
+          }
+          
+          /* Clear floats after the header */
+          .header:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+          
+          /* Style the input */
+          input {
+            margin: 0;
+            border: none;
+            border-radius: 0;
+            width: 75%;
+            padding: 10px;
+            float: left;
+            font-size: 16px;
+          }
+          
+          .addBtn {
+            padding: 10px;
+            width: 25%;
+            background: #d9d9d9;
+            color: #555;
+            float: left;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 0;
+          }
+          
+          .addBtn:hover {
+            background-color: #bbb;
+          }
+        </style>
+    </head>
+    <body style="background-image: url(smth.jpeg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+       <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">-</a>
+            <a href="#" onclick="gotoMyAcc()">My Account</a>
+            <a class="dropdown-btn" style="background-color: transparent; background: none;">Tools
+                <i class="fa fa-caret-down"></i>
+            </a>
+              <div class="dropdown-container">
+                <a href="#" style="padding-left: 25%;" onclick="gotoCalendar()">Calendar</a>
+                <a href="#" style="padding-left: 25%;" onclick="gotoMusic()">Study Music</a>
+                <a href="#" style="padding-left: 25%;" onclick="gotoToDo()">To-do List</a>
+              </div>
+            <a href="#" onclick="gotoStudyTips()">Study Tips</a>
+            <a href="#" onclick="gotoResources()">Other Resources</a>
+            <a href="index.html" onclick="return confirm('Are you sure you want to sign out?')">Sign Out</a>
+        </div>
+        <i class="fa fa-bars fa-2x db-text nav-fa" aria-hidden="true" onclick="openNav()"></i>
+        <div id="main">
+            <div class="display-4" style="text-align: center;">my<span class="yellow-text">TO-DO</span></div><br><br>
+        <div id="myDIV" class="header">
+            <input type="text" id="myInput" placeholder="To do...">
+            <span onclick="newElement()" class="addBtn">Add</span>
+        </div>
+          
+          <ul id="myUL">
+            <li>Work out</li>
+            <li class="checked">Do physics homework</li>
+            <li>Work on final project</li>
+            <li>Buy bread</li>
+            <li>Make dinner</li>
+            <li>Clean out backpack</li>
+          </ul>
+          </div>
+    </body>
+    <script src="todoscript.mjs"></script>
+    <script src="navbarJS.mjs"></script>
+    <script src="loginScript.mjs"></script>
+    <script src="firstPageScript.mjs"></script>
+</html>

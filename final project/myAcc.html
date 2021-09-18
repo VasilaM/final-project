@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>My Account</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="style_for_finalproj.css">
+        <link rel="stylesheet" href="sidenav-css.css">
+        <script src="https://kit.fontawesome.com/2a6500bca6.js" crossorigin="anonymous"></script>
+    </head>
+    <body style="background-image: url(smth.jpeg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">-</a>
+            <a href="#" onclick="gotoMyAcc()">My Account</a>
+            <a class="dropdown-btn" style="background-color: transparent; background: none;">Tools
+                <i class="fa fa-caret-down"></i>
+            </a>
+              <div class="dropdown-container">
+                <a href="#" style="padding-left: 25%;" onclick="gotoCalendar()">Calendar</a>
+                <a href="#" style="padding-left: 25%;" onclick="gotoMusic()">Study Music</a>
+                <a href="#" style="padding-left: 25%;" onclick="gotoToDo()">To-do List</a>
+              </div>
+            <a href="#" onclick="gotoStudyTips()">Study Tips</a>
+            <a href="#" onclick="gotoResources()">Other Resources</a>
+            <a href="index.html" onclick="return confirm('Are you sure you want to sign out?')">Sign Out</a>
+        </div>
+        <i class="fa fa-bars fa-2x db-text nav-fa" aria-hidden="true" onclick="openNav()"></i>
+        <div id="main">
+            <div class="display-3" style="text-align: center;">my<span class="yellow-text">ACCOUNT</span></div><br><br><br>
+
+
+            <div class="card-deck"></div>
+                     <!-- card 1-->
+                <div class="card card-image mb-12" style="background-image: url(studyTips.jpeg); margin-left: 12.5%; width: 950px; margin-bottom: 2.5%; padding-top: 7.5%; padding-bottom: 7.5%;">
+                    <div>
+                        <div class="text-white text-center align-items-center rgba-black-strong py-5 px-4">
+                            <div>
+                                <h4 class="red-text card-title pt-2"><strong>Study Tips</strong></h4>
+                                <p style="padding-left: 20%; padding-right: 20%;">Gain access to all of the tips and tricks we offer in our course- all in one page. Every method and techique to enhance your studying can be found here- summed up nicely.</p>
+                                <a href="#" class="btn backred" onclick="gotoStudyTips()">View Study Tips</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                     <!-- card 2 -->
+                <div class="card card-image mb-12 " style="background-image: url(calendar.jpeg); background-repeat: no-repeat;background-size: cover; margin-left: 12.5%; width: 950px; margin-bottom: 2.5%; padding-top: 7.5%; padding-bottom: 7.5%;">
+                    <div>
+                        <div class="text-white text-center align-items-center rgba-black-strong py-5 px-4">
+                            <div>
+                                <h4 class="red-text card-title pt-2"><strong>Calendar</strong></h4>
+                                <p style="padding-left: 20%; padding-right: 20%;">In order to have a much less stressful semester having a calendar is must. Knowing your deadlines and due dates is crucial for a stress-free education. You can easily keep track of all your upcoming due dates with our calendar.</p>
+                                <a href="#" class="btn backred" onclick="gotoCalendar()">View Calendar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        
+        
+                <!-- card 3 -->
+
+                <div class="card card-image mb-12" style="background-image: url(todolist.jpeg); background-repeat: no-repeat;background-size: cover; margin-left: 12.5%; width: 950px; margin-bottom: 2.5%; padding-top: 7.5%; padding-bottom: 7.5%;">
+                    <div>
+                        <div class="text-white text-center align-items-center rgba-black-strong py-5 px-4">
+                            <div>
+                                <h4 class="red-text card-title pt-2"><strong>To-do List</strong></h4>
+                                <p style="padding-left: 20%; padding-right: 20%;">Having a ot-do list for every daily tasks is also really important for staying on track. Ours is a super simple and easy-to-use version that you can access every day.</p>
+                                <a href="#" class="btn backred" onclick="gotoToDo()">View To-do List</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                  <!-- card 4 -->
+
+                <div class="card card-image mb-12 " style="background-image: url(headphones.jpeg); background-repeat: no-repeat;background-size: cover; margin-left: 12.5%; width: 950px; margin-bottom: 2.5%; padding-top: 7.5%; padding-bottom: 7.5%;">
+                    <div>
+                        <div class="text-white text-center align-items-center rgba-black-strong py-5 px-4">
+                            <div>
+                                <h4 class="red-text card-title pt-2"><strong>Study Music</strong></h4>
+                                <p style="padding-left: 20%; padding-right: 20%;">Many people have have mixed views when it comes to playing music while studying, and scientist says it is much better to study in silence rather than have upbeat music blaring. But studies have shown soft, lyricless, slow music can actually improve your mood, and thus your productivity while studying. We offer and selection of tracks fit just right for studying.</p>
+                                <a href="#" class="btn backred" onclick="gotoMusic()">View Study Music</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                     <!-- card 5 -->
+
+                <div class="card card-image mb-12 " style="background-image: url(otherRes.jpeg); background-repeat: no-repeat;background-size: cover; margin-left: 12.5%; width: 950px; margin-bottom: 2.5%; padding-top: 7.5%; padding-bottom: 7.5%;">
+                    <div>
+                        <div class="text-white text-center align-items-center rgba-black-strong py-5 px-4">
+                            <div>
+                                <h4 class="red-text card-title pt-2"><strong>Other Resources</strong></h4>
+                                <p style="padding-left: 20%; padding-right: 20%;">There are a lot of great resources to help you in you journey in education. We have compiled a list of free online resources designed to help you have a better experience studying and continue studying efficiently upon finishing the course.</p>
+                                <a href="#" class="btn backred" onclick="gotoResources()">View Other Resources</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </body> 
+        <script src="navbarJS.mjs"></script>
+        <script src="loginScript.mjs"></script>
+        <script src="firstPageScript.mjs"></script>
+</html>

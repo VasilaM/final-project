@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Log In</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="style_for_finalproj.css">
+        <script src="https://kit.fontawesome.com/2a6500bca6.js" crossorigin="anonymous"></script>
+    </head>
+    <body style=" background-image: url(smth.jpeg);background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+        <div class="display-3" style="text-align: center; padding-top: 5%;">log<span class="yellow-text">IN</span></div><br><br>
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                <label class="lb-text" for="username">Your Username:</label>
+                <input class="form-control" type="text" id="username" placeholder="ex: Billy Joe"><br><br>
+                <label class="lb-text" for="username">Your Password:</label>
+                <input class="form-control" type="password" id="password" placeholder="ex: *******"><br><br>
+                <button class="btn yellow-text lbback whiteHover" style="margin-left: 40%;" onclick="logIn()">Log In!</button><br><br>
+                <small style="margin-left: 25%;"><span class="lb-text">Don't have an account? </span><a href="#" class="db-text" style="text-decoration: none;" onclick="giveError()">Sign Up!</a></small>
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+    </body>
+        <script src="firstPageScript.mjs"></script>
+        <script src="loginScript.mjs"></script>
+</html>
